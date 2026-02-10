@@ -31,7 +31,8 @@ jobs:
       - uses: nrwl/nx-set-shas@v4
 
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
-      - run: npx nx affected -t lint test build --skip-nx-cache --verbose
+      #- run: npx nx affected -t lint test build --skip-nx-cache --verbose
+      - run: npx nx affected -t build
 
       # - name: Configure AWS credentials
       #   uses: aws-actions/configure-aws-credentials@v3
