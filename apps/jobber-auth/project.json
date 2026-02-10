@@ -40,7 +40,7 @@
       "dependsOn": ["build"],
       "options": {
         "buildTarget": "jobber-auth:build",
-        "runBuildTargetDependencies": false
+        "runBuildTargetDependencies": true
       },
       "configurations": {
         "development": {
@@ -52,9 +52,7 @@
       }
     },
     "test": {
-      "options": {
-        "passWithNoTests": true
-      }
+      "dependsOn": ["generate-types"]
     },
     "generate-types": {
       "command": "prisma generate",
