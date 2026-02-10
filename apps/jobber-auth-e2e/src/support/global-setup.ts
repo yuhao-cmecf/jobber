@@ -10,7 +10,7 @@ module.exports = async function () {
   try {
     const host = process.env.HOST ?? 'localhost';
     const port = process.env.PORT ? Number(process.env.PORT) : 3000;
-    await waitForPortOpen(port, { host });
+    //await waitForPortOpen(port, { host });
   } catch (err) {
     console.error('GLOBAL SETUP FAILED:', err);
     throw err;
