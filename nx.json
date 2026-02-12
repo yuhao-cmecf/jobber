@@ -35,5 +35,6 @@
       },
       "exclude": ["apps/products-e2e/**/*", "apps/jobber-jobs-e2e/**/*"]
     }
-  ]
+  ],
+  "useDaemonProcess": true
 }
